@@ -15,10 +15,11 @@ export declare class DashboardService {
         value: number;
     }[];
     getVisitorInsights(): {
-        loyalCustomers: number;
-        newCustomers: number;
-        uniqueCustomers: number;
-    };
+        month: string;
+        loyal: number;
+        new: number;
+        unique: number;
+    }[];
     getTopProducts(): {
         name: string;
         popularity: number;

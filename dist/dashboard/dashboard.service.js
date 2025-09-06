@@ -33,11 +33,20 @@ let DashboardService = class DashboardService {
         ];
     }
     getVisitorInsights() {
-        return {
-            loyalCustomers: 500,
-            newCustomers: 200,
-            uniqueCustomers: 300,
-        };
+        return [
+            { month: 'Jan', loyal: 120, new: 80, unique: 60 },
+            { month: 'Feb', loyal: 150, new: 100, unique: 70 },
+            { month: 'Mar', loyal: 180, new: 90, unique: 75 },
+            { month: 'Apr', loyal: 200, new: 110, unique: 90 },
+            { month: 'May', loyal: 170, new: 120, unique: 85 },
+            { month: 'Jun', loyal: 220, new: 130, unique: 95 },
+            { month: 'Jul', loyal: 210, new: 140, unique: 100 },
+            { month: 'Aug', loyal: 230, new: 150, unique: 110 },
+            { month: 'Sep', loyal: 240, new: 160, unique: 120 },
+            { month: 'Oct', loyal: 260, new: 170, unique: 130 },
+            { month: 'Nov', loyal: 270, new: 180, unique: 140 },
+            { month: 'Dec', loyal: 300, new: 200, unique: 150 },
+        ];
     }
     getTopProducts() {
         return [
